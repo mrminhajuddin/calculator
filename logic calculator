@@ -1,0 +1,27 @@
+def logic_calculator():
+    print("Logic Calculator")
+    print("1. AND")
+    print("2. OR")
+    print("3. NOT")
+    print("4. XOR")
+
+    choice = int(input("Choose operation (1-4): "))
+
+    if choice == 3:  # NOT operation
+        a = int(input("Enter 0 or 1: "))
+        print("Result:", int(not a))
+
+    else:
+        a = int(input("Enter first value (0 or 1): "))
+        b = int(input("Enter second value (0 or 1): "))
+
+        if choice == 1:
+            print("Result:", a & b)
+        elif choice == 2:
+            print("Result:", a | b)
+        elif choice == 4:
+            print("Result:", a ^ b)
+        else:
+            print("Invalid choice")
+
+logic_calculator()
